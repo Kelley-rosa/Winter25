@@ -1,119 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <meta name="author" content="Kelley Rosa">
-        <meta name="description" content="DEV320 Winter 2025 Profolio">
-        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-        
-        
         <title>Kelley's Portfolio</title>
-
-
-        <!-- See http://getbootstrap.com for detgails on how to use these libraries -->
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-
-        <!-- Below is the link to your custom style sheet. -->
-        <!-- link rel="stylesheet" href="../css/style.css" / -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Below is an Internal style that places a border around divs.  USE BORDERS DURING DEVELOPMENT TO SEE WHAT IS GOING ON
-TURN BORDERS OFF, TURN BORDERS OFF, REPEAT, TURN BORDERS OFF FOR PRODUCTION.  DO NOT LEAVE ANY UNSTYLED BORDERS TURNED ON WHEN YOU PUBLISH YOUR PAGE FOR PUBLIC ACCESS -->
-
-        <style>
-        div {
-            border: solid;
-        }
-
-        @media only screen and (min-width: 100px) {
-            /* For tablets: */
-
-            /* this will change the container class background to red when tablet*/
-
-            .col {
-                background-color: lavenderblush;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            /* For desktop: will change the container class to orange*/
-
-            .col {
-                background-color: lightgray;
-            }
-        }
-
-        @media only screen and (min-width: 992px) {
-            /* For desktop: will change the container class to orange*/
-
-            .col {
-                background-color: lightgoldenrodyellow;
-            }
-        }
-
-        @media only screen and (min-width: 1200px) {
-            /* For desktop: will change the container class to orange*/
-
-            .col {
-                background-color: lavender;
-            }
-        }
-    
-    </style>
-
-</head>
-<body>
-
-
-    <div class="container-fluid">
-
-            <div class="col col-sm-6 col-md-4 col-lg-3 col-xl-12">
-                <img src="img/kelleyrosa.jpg" style="float:left; height:50px; margin:0px;">
-                <br><br>
-                <p>
-                    Kelley Rosa<br>
-                    kelley.rosa at bellevuecollege dot edu
-                </p>
-            </div><!-- port 1-->
-
-            <div class="col col-sm-6 col-md-4 col-lg-3 col-xl-12">
-                <p>
-                    <span class="strong">Bio<br></span>
-                    I’m pursuing a Bachelor in Software Development with an Application Development. I have experience with programming languages like C#, Python, Java, HTML, and JavaScript. My professional background includes IT-related roles, such as designing internal websites and automating workflows. These experiences taught me the importance of user-focused design and efficient problem-solving.
-                    If I had to focus on one technology for the next decade, it would be C#. Its versatility, especially in developing desktop applications and web services makes it an exciting and valuable language to master.
-In my downtime, I enjoy capturing moments through photography or working on crafting projects.
-
-My hobbies—traveling, photography, and arts and crafts—nurture my creative side and inspire me to think innovatively, which I bring into my tech projects. Through this course, I hope to strengthen my back-end technical skills and gain practical experience that prepares me for a successful career in software development.
-                </p>
-            </div> <!-- port 2-->
-
-            <div class="col col-sm-6 col-md-4 col-lg-3 col-xl-12 hidden-xs hidden-sm">
-                Education<br>
-                2017 Associate of Arts - Liberal Arts
-                Northwest Vista Alamo College
-
-                (current) BAS Software Development
-                Bellevue College
-
-            </div> <!--land 3-->
-
-            <div class="col col-sm-6 col-md-4 col-lg-3 col-xl-12 hidden-xs hidden-sm">
-                Experience<br>
-                <p>
-                    
-                </p>
-            </div><!-- land 3-->
-            <!--!div-->
-
-
-            <div class="row-fluid">
-                <div class="col-sm-6 col-lg-6 hidden-sm hidden-md">
-                <a href="html/webresources.html">Web Resources</a></div>
+        <!-- Bootstrap Links -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- CSS Link -->
+         <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Kelley Rosa</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="html/webresources.html">WebResources</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
             </div>
-            <!--!div-->
+        </nav>
 
+        <div class="container-fluid">
+            <!-- Header -->
+            <h1>Kelley Rosa</h1>      
+            <p>This part is inside a .container-fluid class.</p> 
+
+            <!-- Profile Image -->
+            <img src="img/kelleyrosa.jpg" width="200px" class="img-rounded" alt="Cinque Terre">
+            
+            <!-- Biography -->
+            <p>
+                Biography<br>
+                I’m pursuing a Bachelor in Software Development with an Application Development. I have experience with programming languages like C#, Python, Java, HTML, and JavaScript. My professional background includes IT-related roles, such as designing internal websites and automating workflows. These experiences taught me the importance of user-focused design and efficient problem-solving.
+                If I had to focus on one technology for the next decade, it would be C#. Its versatility, especially in developing desktop applications and web services makes it an exciting and valuable language to master.
+                In my downtime, I enjoy capturing moments through photography or working on crafting projects.
+                My hobbies—traveling, photography, and arts and crafts—nurture my creative side and inspire me to think innovatively, which I bring into my tech projects. Through this course, I hope to strengthen my back-end technical skills and gain practical experience that prepares me for a successful career in software development.
+            </p>
+
+            <div class="row">
+                <!-- Education -->
+                <div class="col-sm-4">
+                    Education<br>
+                    2017 Associate of Arts - Liberal Arts<br>
+                    Northwest Vista Alamo College<br>
+                    <br>
+                    (Current) BAS Software Development<br>
+                    Bellevue College<br>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-sm-8">
+                    Experience
+                </div>
+            </div>
+            
+                <!-- Left-aligned -->
+                 <div class="media">
+                    <div class="media-left">
+                        <img src="img/kelleyrosa.jpg" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">John Doe</h4>
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
         </div>
-
-
-</body></html>
+    </body>
+</html>
