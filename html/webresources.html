@@ -1,156 +1,178 @@
-
-<!DOCTYPE html lang="en">
-<html>
-<head>
-  <title>Web Resources</title>
-  
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-  <link href=".../css/style.css" rel="stylesheet" type="text/css" />
-
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-
-</head>
-<body>
-  <h1>Web Resources</h1>
-  
-  <p class="foo">
-    <a href="#Resource1">FreeCodeCamp</a> | 
-    <a href="#Resource2">HTML Reference</a> | 
-    <a href="#Resource3">Learn Shay Howe</a> |
-    <a href="#Resource4">JavaScript Info</a> |
-    <a href="#Resource5">Coolors</a> |
-    <a href="../index.html">Main</a>
-  </p>
-  
-  <ol>
-    <li>
-      <p id="Resource1">
-        <a href="https://www.freecodecamp.org" target="_blank">
-          <h3>FreeCodeCamp</h3>
-        </a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kelley's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
-        <P>
-          <strong>Description:</strong><br />
-          Offers tutorials and certifications in web development and other technical skills. 
-          <br/><br/>
-          <strong>Usefulness:</strong><br />
-          This platform is beneficial for beginners and intermediate developers because it provides a pathway to learning programming skills for all levels.
-          <br/><br/>
-          <strong>Application:</strong><br />
-          Serves as a go-to resource for learning and practicing fundamental and advanced programming skills.
-          <br/><br/>
-          <strong>Rating:</strong><br />
-          &#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733
-          <br/>
-          10/10 for its depth, accessibility, and practical approach.
-          <br/><br/>
-        </P>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    
+    <!-- Navagation Bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Kelley's Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="html/webresources.html">WebResources</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Web Resources Body -->
+    <div class="container-fluid">
+      <!-- Header -->
+      <h1>Web Resources</h1>
+      <p id="webRefList">
+        <a href="#Resource1">FreeCodeCamp</a> | 
+        <a href="#Resource2">HTML Reference</a> | 
+        <a href="#Resource3">Learn Shay Howe</a> |
+        <a href="#Resource4">JavaScript Info</a> |
+        <a href="#Resource5">Coolors</a>
       </p>
-    </li>
-    <li>
-      <p id="Resource2">
-        <a href="https://htmlreference.io3" target="_blank">
-          <h3>HTML Reference</h3>
-        </a>
+      <br/>
+      
+      <!-- Resource 1 -->
+      <div class="media" id="Resource1">
+        <div class="media-left">
+          <img src="../img/ref1.png" class="media-object" style="height:200px">
+        </div>
         
-        <P>
-          <strong>Description:</strong><br />
-          Is an organized guide to HTML. It includes explanations, code samples, and visual examples for elements and properties.
-          <br/><br/>
-          <strong>Usefulness:</strong><br />
-          This site is a quick reference tool for building and structuring web pages.
-          <br/><br/>
-          <strong>Application:</strong><br />
-          While working on your web app, HTML Reference can help you quickly look up tag and property details.
-          <br/><br/>
-          <strong>Rating:</strong><br />
-          &#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9734&#9734&#9734
-          <br/>
-          7/10 for its simplicity and specificity.
-          <br/><br/>
-        </P>
-      </p>
-    </li>
-    <li>
-      <p id="Resource3">
-        <a href="https://learn.shayhowe.com" target="_blank">
-          <h3>Learn Shay Howe</h3>
-        </a>
+        <div class="media-body">
+          <a href="https://www.freecodecamp.org" target="_blank">
+            <h3 class="media-heading">FreeCodeCamp</h3>
+          </a>
+          
+          <p>
+            <strong>Description:</strong><br/>
+            Offers tutorials and certifications in web development and other technical skills.<br/><br/>
+            <strong>Usefulness:</strong><br/>
+            This platform is beneficial for beginners and intermediate developers because it provides a pathway to learning programming skills for all levels.<br/><br/>
+            <strong>Application:</strong><br/>
+            Serves as a go-to resource for learning and practicing fundamental and advanced programming skills.<br/><br/>
+            <strong>Rating:</strong><br/>
+            &#9733&#9733&#9733&#9733&#9733<br/>
+            5/5 for its depth, accessibility, and practical approach.<br/>
+            <a href="#">[Back to top]</a><br/><br/>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Resource 2 -->
+      <div class="media" id="Resource2">
+        <div class="media-left">
+          <img src="../img/ref2.png" class="media-object" style="height:200px">
+        </div>
         
-        <P>
-          <strong>Description:</strong><br />
-          Offers beginner and advanced tutorials on HTML and CSS. The lessons are well-structuredI. It also has an emphasis on building responsive web designs.
-          <br/><br/>
-          <strong>Usefulness:</strong><br />
-          This site is a quick reference tool for building and styling web pages.
-          <br/><br/>
-          <strong>Application:</strong><br />
-          This resource is useful for implementing design best practices and creating user-friendly interfaces.
-          <br/><br/>
-          <strong>Rating:</strong><br />
-          &#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9734
-          <br/>
-          9/10 for its clarity and focus on practical implementation.
-          <br/><br/>
-        </P>
-      </p>
-    </li>
-    <li>
-      <p id="Resource4">
-        <a href="https://javascript.info" target="_blank">
-          <h3>JavaScript Info</h3>
-        </a>
+        <div class="media-body">
+          <a href="https://htmlreference.io" target="_blank">
+            <h3 class="media-heading">HTML Reference</h3>
+          </a>
+          
+          <p>
+            <strong>Description:</strong><br/>
+            Is an organized guide to HTML. It includes explanations, code samples, and visual examples for elements and properties.<br/><br/>
+            <strong>Usefulness:</strong><br/>
+            This site is a quick reference tool for building and structuring web pages.<br/><br/>
+            <strong>Application:</strong><br/>
+            While working on your web app, HTML Reference can help you quickly look up tag and property details.<br/><br/>
+            <strong>Rating:</strong><br/>
+            &#9733&#9733&#9733&#9734&#9734<br/>
+            3/5 for its simplicity and specificity.<br/>
+            <a href="#">[Back to top]</a><br/><br/>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Resource 3 -->
+      <div class="media" id="Resource3">
+        <div class="media-left">
+          <img src="../img/ref3.png" class="media-object" style="height:200px">
+        </div>
         
-        <P>
-          <strong>Description:</strong><br />
-          Resource for learning JavaScript. It covers basic concepts to advanced programming topics.
-          <br/><br/>
-          <strong>Usefulness:</strong><br />
-          Perfect for developers at all levels. Can also be used for learning how to use JavaScript to work with a browser.
-          <br/><br/>
-          <strong>Application:</strong><br />
-          You can use this site to improve your JavaScript skills for client-side programming, building app features, and integrating APIs.
-          <br/><br/>
-          <strong>Rating:</strong><br />
-          &#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733
-          <br/>
-          10/10 for its depth and breadth
-          <br/><br/>
-        </P>
-      </p>
-    </li>
-    <li>
-      <p id="Resource5">
-        <a href="https://coolors.co" target="_blank">
-          <h3>Coolors</h3>
-        </a>
+        <div class="media-body">
+          <a href="https://learn.shayhowe.com" target="_blank">
+            <h3 class="media-heading">Learn Shay Howe</h3>
+          </a>
+          
+          <p>
+            <strong>Description:</strong><br/>
+            Offers beginner and advanced tutorials on HTML and CSS. The lessons are well-structuredI. It also has an emphasis on building responsive web designs.<br/><br/>
+            <strong>Usefulness:</strong><br/>
+            This site is a quick reference tool for building and styling web pages.<br/><br/>
+            <strong>Application:</strong><br/>
+            This resource is useful for implementing design best practices and creating user-friendly interfaces.<br/><br/>
+            <strong>Rating:</strong><br/>
+            &#9733&#9733&#9733&#9733&#9734<br/>
+            4/5 for its clarity and focus on practical implementation.<br/>
+            <a href="#">[Back to top]</a><br/><br/>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Resource 4 -->
+      <div class="media" id="Resource4">
+        <div class="media-left">
+          <img src="../img/ref4.png" class="media-object" style="height:200px">
+        </div>
         
-        <P>
-          <strong>Description:</strong><br />
-          Color palette generator that helps users create color schemes for web design.
-          <br/><br/>
-          <strong>Usefulness:</strong><br />
-          A tool for designers and developers who want to enhance the visualS of their projects.
-          <br/><br/>
-          <strong>Application:</strong><br />
-          You can use this to brainstorm color schemes for your apps.
-          <br/><br/>
-          <strong>Rating:</strong><br />
-          &#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9733&#9734
-          <br/>
-          9/10 for its creative utility and ease of use.
-          <br/><br/>
-        </P>
-      </p>
-    </li>
-
-
-  </ol>
-</body>
+        <div class="media-body">
+          <a href="https://javascript.info" target="_blank">
+            <h3 class="media-heading">JavaScript Info</h3>
+          </a>
+          
+          <p>
+            <strong>Description:</strong><br/>
+            Resource for learning JavaScript. It covers basic concepts to advanced programming topics.<br/><br/>
+            <strong>Usefulness:</strong><br/>
+            Perfect for developers at all levels. Can also be used for learning how to use JavaScript to work with a browser.<br/><br/>
+            <strong>Application:</strong><br/>
+            You can use this site to improve your JavaScript skills for client-side programming, building app features, and integrating APIs.<br/><br/>
+            <strong>Rating:</strong><br/>
+            &#9733&#9733&#9733&#9733&#9733<br/>
+            5/5 for its depth and span<br/>
+            <a href="#">[Back to top]</a><br/><br/>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Resource 5 -->
+      <div class="media" id="Resource5">
+        <div class="media-left">
+          <img src="../img/ref5.png" class="media-object" style="height:200px">
+        </div>
+        
+        <div class="media-body">
+          <a href="https://coolors.co" target="_blank">
+            <h3 class="media-heading">Coolors</h3>
+          </a>
+          
+          <p>
+            <strong>Description:</strong><br/>
+            Color palette generator that helps users create color schemes for web design.
+            <br/><br/>
+            <strong>Usefulness:</strong><br/>
+            A tool for designers and developers who want to enhance the visualS of their projects.<br/><br/>
+            <strong>Application:</strong><br/>
+            You can use this to brainstorm color schemes for your apps.<br/><br/>
+            <strong>Rating:</strong><br/>
+            &#9733&#9733&#9733&#9733&#9734<br/>
+            4/5 for its creative utility and ease of use.<br/>
+            <a href="#">[Back to top]</a><br/><br/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
